@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community" method="upgrade">
+	<name>Profile Visitor</name>
+	<author>Team JoomlaXi</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>team@readybytes.in</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<version>1.2</version>
+	<isapplication>true</isapplication>
+	<description>Who Visited My Profile Community Plug-in </description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_community_profile_visitor.ini</language>
+	</languages>
+	<files>
+		<filename plugin="profile_visitor">profile_visitor.php</filename>
+  	</files>
+
+		<config>
+			<fields name="params">
+				<fieldset name="basic">
+					<field name="coreapp" type="list" default="1" label="Core Application" description="Causes this application to not appear in the users applications list but it will allow this application to appear in the user profile automatically if selected.">-->
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					
+					<field name="position" type="list" default="content" label="Position" description="Default position if you select this as core apps">
+							<option value="content">Main  content</option>
+							<option value="sidebar-top">Sidebar top</option>
+							<option value="sidebar-bottom">Sidebar bottom</option>
+					</field>
+					
+					<field name="userLimit" type="list" default="1" label="Display User Limit" description="Limited number of viewed users dispaly on profile">
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+					</field>
+				</fieldset>
+			</fields>
+		</config>
+</extension>
