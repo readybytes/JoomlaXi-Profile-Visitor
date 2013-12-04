@@ -25,6 +25,7 @@ class plgCommunityProfile_visitor extends CApplications
 		parent::__construct($subject, $config);
 		$this->_db		= JFactory::getDBO();
 		$this->session  = JFactory::getSession();
+		$this->loadLanguage();
 	}
 	
 	function onProfileDisplay()
